@@ -22,11 +22,11 @@ public class Reto2 {
                 "mayo", "junio", "julio", "agosto",
                 "septiembre", "octubre", "noviembre", "diciembre"};
 
-        for (int mes = 1; mes < mesesAnio.length; mes++) {
+        for (int mes = 0; mes < mesesAnio.length; mes++) {
             int diasMes = 0;
-            if (mes == 2) { //febrero
+            if (mes == 1) { //febrero
                 diasMes = 28;
-            } else if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
+            } else if (mes == 3 || mes == 5 || mes == 8 || mes == 10) {
                 diasMes = 30; // abril, junio, septiembre, noviembre
             } else {
                 diasMes = 31; //enero, marzo, mayo, julio, agosto, octubre, diciembre
