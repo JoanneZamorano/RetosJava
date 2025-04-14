@@ -22,18 +22,18 @@ public class Reto2 {
                 "mayo", "junio", "julio", "agosto",
                 "septiembre", "octubre", "noviembre", "diciembre"};
 
-        for (int i = 0; i < mesesAnio.length; i++) {
+        for (int mes = 1; mes < mesesAnio.length; mes++) {
             int diasMes = 0;
-            if (i == 1) { //febrero
+            if (mes == 2) { //febrero
                 diasMes = 28;
-            } else if (i == 3 || i == 5 || i == 8 || i == 10) {
+            } else if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
                 diasMes = 30; // abril, junio, septiembre, noviembre
             } else {
                 diasMes = 31; //enero, marzo, mayo, julio, agosto, octubre, diciembre
             }
 
             //Imprimir por pantalla
-            System.out.println("\n ** " + mesesAnio[i].toUpperCase() + " **");
+            System.out.println("\n ** " + mesesAnio[mes].toUpperCase() + " **");
 
             for (int dia = 1; dia <= diasMes; dia++) {
                 System.out.print(dia + "\t");
